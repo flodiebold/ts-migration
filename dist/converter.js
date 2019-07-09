@@ -50,6 +50,7 @@ const recastPlugin = function (rootDir) {
     };
 };
 exports.babelOptions = (rootDir) => ({
+    babelrc: false,
     plugins: [recastPlugin(rootDir), babel_plugin_flow_to_typescript_1.default, plugin_syntax_dynamic_import_1.default]
 });
 const successFiles = [];

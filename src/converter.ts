@@ -38,6 +38,7 @@ const recastPlugin = function(rootDir: string) {
 };
 
 export const babelOptions = (rootDir: string): babel.TransformOptions => ({
+  babelrc: false,
   plugins: [recastPlugin(rootDir), plugin, dynamicImport]
 });
 
